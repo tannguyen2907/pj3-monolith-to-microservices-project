@@ -1,3 +1,7 @@
+language: node_js
+node_js:
+  - 12
+
 services:
   - docker
 
@@ -33,4 +37,4 @@ after success:
     - docker push ngtrantan99/reverseproxy:v3
 
 
-    #update
+    #update test 1
