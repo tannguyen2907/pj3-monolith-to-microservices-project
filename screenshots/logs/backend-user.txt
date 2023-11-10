@@ -1,0 +1,22 @@
+tannguyen@Cai-mac-ngu-ngoc deployments % kubectl logs backend-feed-57cf7864b4-bffg4
+
+> udagram-api@2.0.0 prod /usr/src/app
+> tsc && node ./www/server.js
+
+Initialize database connection...
+(node:26) UnhandledPromiseRejectionWarning: SequelizeConnectionError: password authentication failed for user "��-���"
+    at Client._connectionCallback (/usr/src/app/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:182:24)
+    at Client._handleErrorWhileConnecting (/usr/src/app/node_modules/pg/lib/client.js:305:19)
+    at Client._handleErrorMessage (/usr/src/app/node_modules/pg/lib/client.js:325:19)
+    at Connection.emit (events.js:314:20)
+    at Connection.EventEmitter.emit (domain.js:483:12)
+    at /usr/src/app/node_modules/pg/lib/connection.js:114:12
+    at Parser.parse (/usr/src/app/node_modules/pg-protocol/dist/parser.js:40:17)
+    at Socket.<anonymous> (/usr/src/app/node_modules/pg-protocol/dist/index.js:11:42)
+    at Socket.emit (events.js:314:20)
+    at Socket.EventEmitter.emit (domain.js:483:12)
+    at addChunk (_stream_readable.js:297:12)
+    at readableAddChunk (_stream_readable.js:272:9)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+(node:26) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
