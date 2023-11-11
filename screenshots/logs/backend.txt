@@ -1,4 +1,0 @@
-tannguyen@Cai-mac-ngu-ngoc deployments % kubectl logs backend-feed-57cf7864b4-bffg4
-
-> udagram-api@2.0.0 prod /usr/src/app
-> tsc && node ./www/server.js
